@@ -1,13 +1,14 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="generator" content="{Astro.generator}" />
     <title>About | Astro Codestitch Test Project</title>
   </head>
   <body>
@@ -62,7 +63,8 @@ import Navbar from '../components/Navbar.astro';
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z"
-          fill="var(--maskBG)"></path>
+          fill="var(--maskBG)"
+        ></path>
       </svg>
     </div>
 
@@ -83,12 +85,16 @@ import Navbar from '../components/Navbar.astro';
             <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg
+              "
             />
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg
+              "
             />
             <img
               loading="lazy"
@@ -112,26 +118,26 @@ import Navbar from '../components/Navbar.astro';
         </div>
         <div class="cs-content">
           <h1 class="cs-title">
-            At <span class="cs-color">Kids Hurt Too Hawai'i, </span> we believe that children should
-            not be alone in their grief and trauma. The best way to heal is within a <span
-              class="cs-color">supportive community.</span
-            >
+            At <span class="cs-color">Kids Hurt Too Hawai'i, </span> we believe
+            that children should not be alone in their grief and trauma. The
+            best way to heal is within a
+            <span class="cs-color">supportive community.</span>
           </h1>
           <h2>Heading 2</h2>
           <h3>Heading 3</h3>
           <h4>Heading 4-6</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam eum quae
-            in temporibus cumque tempora expedita mollitia nostrum adipisci, ipsum commodi,
-            cupiditate, sequi quos enim! Quaerat esse non sunt! Lorem ipsum dolor sit amet <a
-              href="">link example</a
-            >. Est, quis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            laboriosam eum quae in temporibus cumque tempora expedita mollitia
+            nostrum adipisci, ipsum commodi, cupiditate, sequi quos enim!
+            Quaerat esse non sunt! Lorem ipsum dolor sit amet
+            <a href="">link example</a>. Est, quis!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam eum quae
-            in temporibus cumque tempora expedita mollitia nostrum <strong
-              >adipisci, ipsum commodi</strong
-            >, cupiditate, sequi quos enim!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            laboriosam eum quae in temporibus cumque tempora expedita mollitia
+            nostrum <strong>adipisci, ipsum commodi</strong>, cupiditate, sequi
+            quos enim!
           </p>
           <h3>Heading 3</h3>
           <ol>
@@ -149,6 +155,7 @@ import Navbar from '../components/Navbar.astro';
       </div>
       <div class="cs-bubbles" aria-hidden="true"></div>
     </section>
+    <Footer />
   </body>
 </html>
 
@@ -215,11 +222,11 @@ import Navbar from '../components/Navbar.astro';
     }
     #banner-1535 .cs-link:after {
       /* chevron */
-      content: '';
+      content: "";
       width: 0.4375rem;
       height: 0.75rem;
       margin: 0 1rem;
-      background: url('https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-chevron.svg');
+      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-chevron.svg");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -240,7 +247,7 @@ import Navbar from '../components/Navbar.astro';
     }
     #banner-1535 .cs-background:before {
       /* gradient overlay */
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       background: #fff3ec;
@@ -419,7 +426,7 @@ import Navbar from '../components/Navbar.astro';
     }
     #content-page-1535 ul li:before {
       /* custom list bullet */
-      content: '';
+      content: "";
       width: 3px;
       height: 3px;
       background: currentColor;
