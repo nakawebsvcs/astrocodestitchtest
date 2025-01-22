@@ -13,22 +13,16 @@ import Navbar from './Navbar.astro';
         Kids Hurt Too Hawai'i has provided group support and training services to thousands of
         children, youth, caregivers, and providers.
       </p>
-      <a href="" class="cs-button-solid">Get Started</a>
+      <a href="" class="cs-button-solid">Contact Us</a>
     </div>
   </div>
   <!-- Background Image, background image added in the css at 1600px for parallax effect -->
   <picture class="cs-background">
-    <source
-      media="(max-width: 600px)"
-      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/daycare-m.jpg"
-    />
-    <source
-      media="(min-width: 601px)"
-      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/daycare.jpg"
-    />
+    <source media="(max-width: 600px)" srcset="/assets/test-photo.png" />
+    <source media="(min-width: 601px)" srcset="/assets/test-photo.png" />
     <img
       decoding="async"
-      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/daycare.jpg"
+      src="/assets/test-photo.png"
       alt="abstract background"
       width="2250"
       height="1500"
